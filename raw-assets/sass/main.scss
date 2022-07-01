@@ -314,6 +314,9 @@ body {
     }
     img {
         width: 300px;
+        @media screen and (max-width: 767px) {
+            width: auto;
+        }
     }
 }
 
@@ -479,6 +482,9 @@ body {
         align-items: center !important;
     }
     .elementor-testimonial__image {
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
         img {
             height: 375px !important;
             object-fit: cover;
@@ -497,5 +503,30 @@ body {
         width: 100%;
         margin-left: auto;
         margin-right: auto;
+    }
+}
+
+.product-view-img {
+    @media screen and (max-width: 767px) {
+        height: 300px;
+    }
+}
+
+.col-rev {
+    .elementor-container {
+        @media screen and (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+    }
+}
+
+.featured-img-bg {
+    @media screen and (max-width: 767px) {
+        height: 300px;
+    }
+    .elementor-widget-wrap {
+        @media screen and (max-width: 425px) {
+            background-size: contain !important;
+        }
     }
 }

@@ -442,6 +442,11 @@ body {
 .footer-logo img {
   width: 300px;
 }
+@media screen and (max-width: 767px) {
+  .footer-logo img {
+    width: auto;
+  }
+}
 
 .footer-social {
   padding-left: 0;
@@ -654,6 +659,11 @@ body {
       -ms-flex-align: center !important;
           align-items: center !important;
 }
+@media screen and (max-width: 767px) {
+  .testimonial-slider .elementor-testimonial__image {
+    display: none;
+  }
+}
 .testimonial-slider .elementor-testimonial__image img {
   height: 375px !important;
   -o-object-fit: cover;
@@ -670,4 +680,36 @@ body {
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .product-view-img {
+    height: 300px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .col-rev .elementor-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: column-reverse;
+       -moz-box-orient: vertical;
+       -moz-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .featured-img-bg {
+    height: 300px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .featured-img-bg .elementor-widget-wrap {
+    -webkit-background-size: contain !important;
+       -moz-background-size: contain !important;
+         -o-background-size: contain !important;
+            background-size: contain !important;
+  }
 }
